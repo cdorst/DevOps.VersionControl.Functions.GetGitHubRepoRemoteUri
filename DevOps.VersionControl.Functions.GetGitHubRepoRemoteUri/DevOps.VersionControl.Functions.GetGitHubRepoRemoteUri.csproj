@@ -1,7 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>cdorst</Authors>
+    <Description>Helper for getting the remote URI for a GitHub repository</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>CDorst.DevOps.VersionControl.Functions.GetGitHubRepoRemoteUri</PackageId>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CDorst.Common.Structures.HttpBasicAuthentication" Version="1.0.0" />
+    <PackageReference Include="CDorst.DevOps.VersionControl.Structures.GitHub" Version="1.0.0" />
+  </ItemGroup>
 
 </Project>

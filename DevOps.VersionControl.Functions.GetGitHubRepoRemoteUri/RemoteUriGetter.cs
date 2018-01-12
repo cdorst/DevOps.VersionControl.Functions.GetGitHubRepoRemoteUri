@@ -16,7 +16,7 @@ namespace DevOps.VersionControl.Functions.GetGitHubRepoRemoteUri
         public static Uri RemoteUri(string repository, string account = cdorst)
             => RemoteUri(new AccountRepository(account, repository));
 
-        public static Uri RemoteUri(string repository, BasicAuthenticationCredentials? credentials)
+        public static Uri RemoteUri(string repository, BasicAuthenticationCredentials credentials)
             => RemoteUri((credentials ?? CDorst).User, repository);
     }
 }
